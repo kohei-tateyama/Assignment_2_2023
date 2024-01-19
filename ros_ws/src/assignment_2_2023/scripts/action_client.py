@@ -30,17 +30,41 @@ def client():
         user_input = input("Enter new goal position x,y or 'c' for cancel:")
         print(user_input)
 
+        # if user input is 'c' 
         if user_input == 'c':
-            pass
-        # else if user_input
+            # cancel the goal
+            action_client.cancel_goal()
+            print("Goal cancelled")
 
         
-        # if its 'c' cancel
-        # if its 2 floats,
-        # set it as new target positions
-        
-        # publish newly set targets
-        goal_pub = rospy.Publisher('/goal_topic', Point, queue_size = 1)
+        else:
+            try: # else if user_input is 2 floats
+                # split the 2 floats into x,y
+                coordinates = user_input.split(',')
+                if len(coordinates) != 2:
+                    print("ERROR! Enter the new goal position x,y")	
+
+                x, y = map(float, coordinates)
+
+                # set it as new goal position
+                goal.target_pose.pose.position.x = x
+                goal.target_pose.pose.position.y = y  
+            
+                goal_msg = Point()
+                goal_msg.x = goal.target_pose.pose.position.x
+                goal_msg.y = goal.target_pose.pose.position.y
+
+                # publish newly set targets
+                goal_pub = rospy.Publisher('/goal_topic', Point, queue_size = 1)
+                goal_pub.publish(goal_msg)                                    
+                            
+                action_client.send_goal(goal)
+				# Print a error message if the input is not a float value
+            except ValueError: # else if user_input is not 2 floats
+                print("ERROR! Enter the new goal position x,y")	
+            
+            
+       
     print("Maybe shut down")
 
 

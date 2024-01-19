@@ -70,62 +70,62 @@ assignment_2_2023/CMakeFiles/assignment_2_2023_generate_messages_lisp: /root/ros
 
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningAction.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionGoal.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionResult.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningFeedback.msg
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionFeedback.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningGoal.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningResult.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionGoal.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionResult.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningGoal.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from assignment_2_2023/PlanningAction.msg"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningAction.msg -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg
 
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionGoal.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionGoal.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionGoal.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionGoal.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionGoal.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionGoal.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionGoal.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionGoal.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningGoal.msg
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionGoal.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionGoal.lisp: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionGoal.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningGoal.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionGoal.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionGoal.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionGoal.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from assignment_2_2023/PlanningActionGoal.msg"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionGoal.msg -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg
 
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionResult.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionResult.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionResult.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionResult.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionResult.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionResult.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningResult.msg
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionResult.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionResult.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionResult.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningResult.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionResult.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Lisp code from assignment_2_2023/PlanningActionResult.msg"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionResult.msg -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg
 
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionFeedback.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionFeedback.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionFeedback.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionFeedback.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionFeedback.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningFeedback.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionFeedback.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionFeedback.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionFeedback.lisp: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionFeedback.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningFeedback.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionFeedback.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionFeedback.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionFeedback.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionFeedback.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionFeedback.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from assignment_2_2023/PlanningActionFeedback.msg"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionFeedback.msg -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg
 
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningGoal.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningGoal.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningGoal.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningGoal.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningGoal.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningGoal.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningGoal.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningGoal.lisp: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningGoal.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningGoal.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningGoal.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Lisp code from assignment_2_2023/PlanningGoal.msg"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningGoal.msg -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg
 
@@ -136,9 +136,9 @@ assignment_2_2023/CMakeFiles/assignment_2_2023_generate_messages_lisp: /root/ros
 
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningFeedback.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningFeedback.lisp: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningFeedback.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningFeedback.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningFeedback.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningFeedback.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningFeedback.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningFeedback.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from assignment_2_2023/PlanningFeedback.msg"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningFeedback.msg -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg
 
