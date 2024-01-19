@@ -117,7 +117,7 @@ catkin_package(
 #  DEPENDS system_lib
 )
 
-catkin_install_python(PROGRAMS scripts/action_client.py scripts/subscriber.py
+catkin_install_python(PROGRAMS scripts/action_client.py scripts/get_dist.py scripts/last_target.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

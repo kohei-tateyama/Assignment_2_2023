@@ -11,24 +11,14 @@ def client():
     rospy.init_node("action_client_node", anonymous=True)
 
     # subscribe to rostopic /odom 
-    rospy.Subscriber('/odom', Odometry, callback_odom)
-
     # and receive robot position with custom message
+    rospy.Subscriber('/odom', Odometry, callback_odom) # everytime odom is updated, callback_odom is called
 
+    
     # subscribe to feedback/status
     # check if target is reached
 
-    # publish the position and velocity with position.msg
-    
-    # while not rospy.is_shutdown():
-    #     msg = Position()
-    #     msg.x = 3.12
-    #     msg.y = 4.10
-    #     msg.vel_x = 9.4
-    #     msg.vel_z = 3.52
-    #     pub.publish(msg)
-    #     rate.sleep()
-
+   
 
     # get user input
     # if its 'c' cancel
@@ -38,6 +28,7 @@ def client():
 
 
 def callback_odom(data):
+    # Set the publisher for robot position
     pub = rospy.Publisher('/position', Position,  queue_size = 10)
     rate=rospy.Rate(1)
     # position
@@ -51,6 +42,7 @@ def callback_odom(data):
     msg.y = position_.y
     msg.vel_x = linear_velocity.x
     msg.vel_z = linear_velocity.z
+    # publish the position and velocity with position.msg
     pub.publish(msg)
 
 

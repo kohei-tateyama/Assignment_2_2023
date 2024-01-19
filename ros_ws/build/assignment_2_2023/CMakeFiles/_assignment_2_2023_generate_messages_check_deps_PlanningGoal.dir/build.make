@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /root/ros_ws/build
 include assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningGoal.dir/progress.make
 
 assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningGoal:
-	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py assignment_2_2023 /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningGoal.msg geometry_msgs/Quaternion:geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/PoseStamped:std_msgs/Header
+	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py assignment_2_2023 /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningGoal.msg std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/PoseStamped:geometry_msgs/Pose
 
 _assignment_2_2023_generate_messages_check_deps_PlanningGoal: assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningGoal
 _assignment_2_2023_generate_messages_check_deps_PlanningGoal: assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningGoal.dir/build.make

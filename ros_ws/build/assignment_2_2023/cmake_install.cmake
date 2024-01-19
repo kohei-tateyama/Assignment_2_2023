@@ -109,6 +109,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/assignment_2_2023" TYPE PROGRAM FILES "/root/ros_ws/build/assignment_2_2023/catkin_generated/installspace/subscriber.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/assignment_2_2023" TYPE PROGRAM FILES "/root/ros_ws/build/assignment_2_2023/catkin_generated/installspace/get_dist.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/assignment_2_2023" TYPE PROGRAM FILES "/root/ros_ws/build/assignment_2_2023/catkin_generated/installspace/last_target.py")
 endif()
 
