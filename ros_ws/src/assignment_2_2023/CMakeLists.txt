@@ -59,6 +59,9 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   Position.msg
+  # PlanningAction.msg
+  # Posvel.msg
+  # PlanningGoal.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -117,7 +120,8 @@ catkin_package(
 #  DEPENDS system_lib
 )
 
-catkin_install_python(PROGRAMS scripts/action_client.py scripts/get_dist.py scripts/last_target.py
+catkin_install_python(PROGRAMS scripts/action_client.py scripts/get_dist.py scripts/last_target.py 
+# scripts/ewen.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

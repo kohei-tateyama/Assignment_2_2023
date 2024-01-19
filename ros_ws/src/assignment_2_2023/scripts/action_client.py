@@ -1,11 +1,13 @@
+#! /usr/bin/env python
 import rospy
 from std_msgs.msg import String
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Twist, Point
 from assignment_2_2023.msg import Position
+import assignment_2_2023
+import actionlib
+import actionlib.msg
 
-# position = Position()
-# linear_velocity_ = None
 def client():
     # initialize node
     rospy.init_node("action_client_node", anonymous=True)
@@ -14,17 +16,32 @@ def client():
     # and receive robot position with custom message
     rospy.Subscriber('/odom', Odometry, callback_odom) # everytime odom is updated, callback_odom is called
 
-    
-    # subscribe to feedback/status
-    # check if target is reached
+    # set as action client to check if the targets are reached
+    action_client = actionlib.SimpleActionClient('/reaching_goal', assignment_2_2023.msg.PlanningAction)
 
-   
+    # wait for the server to be available
+    action_client.wait_for_server()
 
-    # get user input
-    # if its 'c' cancel
-    # if its 2 floats,
-    # set it as new target positions
 
+    goal = assignment_2_2023.msg.PlanningGoal()
+
+    while not rospy.is_shutdown():
+        # get user input
+        user_input = input("Enter new goal position x,y or 'c' for cancel:")
+        print(user_input)
+
+        if user_input == 'c':
+            pass
+        # else if user_input
+
+        
+        # if its 'c' cancel
+        # if its 2 floats,
+        # set it as new target positions
+        
+        # publish newly set targets
+        goal_pub = rospy.Publisher('/goal_topic', Point, queue_size = 1)
+    print("Maybe shut down")
 
 
 def callback_odom(data):

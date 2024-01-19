@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 import rospy
 from assignment_2_2023.msg import Position
 
