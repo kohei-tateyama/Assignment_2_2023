@@ -1,4 +1,7 @@
 # Hashes of file build rules.
+1821c7bb4ffb45e27a7bda48ae2b5d14 /root/ros_ws/devel/include/assignment_2_2023/GetDist.h
+921e1df0e387bed4143f5951910a7d07 /root/ros_ws/devel/include/assignment_2_2023/GoalStatus.h
+6f9d93fd741f6ff4f5535a55dc522de2 /root/ros_ws/devel/include/assignment_2_2023/LastTarget.h
 e68c4835b737a2d99edea0648e31d5a9 /root/ros_ws/devel/include/assignment_2_2023/PlanningAction.h
 b425e40a865a245c4d69033086fb3559 /root/ros_ws/devel/include/assignment_2_2023/PlanningActionFeedback.h
 e9fd9e27c2ed7117a8f6693b4274b11b /root/ros_ws/devel/include/assignment_2_2023/PlanningActionGoal.h
@@ -7,6 +10,7 @@ d50e666dfdc2f9c39f42a2d9139ba5b9 /root/ros_ws/devel/include/assignment_2_2023/Pl
 4d64f67bd2828a1f281bf2d0713d7d8f /root/ros_ws/devel/include/assignment_2_2023/PlanningGoal.h
 fedcd10116b24236ca179b3443a21417 /root/ros_ws/devel/include/assignment_2_2023/PlanningResult.h
 5740c3a9a4da5649f6f1bfb6f721eff5 /root/ros_ws/devel/include/assignment_2_2023/Position.h
+85d7a962a722c72131fdf03d5c49bd3a /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_GoalStatus.py
 ed22efdb99520c817723b74a552db2ac /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py
 8bf8de6b89a0e5806decba46648719ac /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionFeedback.py
 829ea72b926bae54e90780ac673661ad /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py
@@ -16,6 +20,10 @@ d841e6f2011ffa618b7b6850d12223a9 /root/ros_ws/devel/lib/python3/dist-packages/as
 49a5c572e28245f38b189fd159333270 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningResult.py
 a468293c5ab08ea23b4b50645f0270b8 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_Position.py
 4e9a49194c0573d6db849bca44ca5c66 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/__init__.py
+59b90c574f49c309925939ebd9c6066c /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/_GetDist.py
+447bbec7fe541eb4c4e3f5d4a0f4fb8e /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/_LastTarget.py
+ec1aabfede060f12b42ed96d43412009 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/__init__.py
+8c01fabaac90a8c1a94c16dfeba18a35 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/GoalStatus.lisp
 4a1874fe687e4938e59cb85d2a14174d /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp
 ae35a28251eefc07ebdb298d85094446 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionFeedback.lisp
 25b94e2e52f8640a367d9fca8b2dc8cd /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionGoal.lisp
@@ -24,6 +32,9 @@ ae35a28251eefc07ebdb298d85094446 /root/ros_ws/devel/share/common-lisp/ros/assign
 5ef6bdc0dd8dc33a56eb3883392cccfe /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningGoal.lisp
 7e064855527e18c947b3b5961e9bceb6 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningResult.lisp
 d7d02c631b7df39d0cb17575a90a98c1 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/Position.lisp
+4a4c39e3b782bfdc94b08acfa3e3bb63 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/srv/GetDist.lisp
+e4caee88b7465f5e8b310dc6925bec39 /root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/srv/LastTarget.lisp
+a913d7209b4e2d2cf76369362a832b32 /root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/msg/GoalStatus.js
 d2ac005187bac84db976b4b552adb907 /root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/msg/PlanningAction.js
 08b98f1f384c3ef30fa893c2d9650233 /root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/msg/PlanningActionFeedback.js
 84db434ad575ddae1c0f9b67e73cd7dc /root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/msg/PlanningActionGoal.js
@@ -32,7 +43,10 @@ d2ac005187bac84db976b4b552adb907 /root/ros_ws/devel/share/gennodejs/ros/assignme
 7ad90f9ebee945699d1e793e94baca31 /root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/msg/PlanningGoal.js
 ef692ad491ba4261efe0b50f4121258a /root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/msg/PlanningResult.js
 87b8e4ce05fce6742f20191d5ec6f3af /root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/msg/Position.js
+94b0c9e912327ad19abaf51341713776 /root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/srv/GetDist.js
+9ab6215792bf0baa45ed192663b6e32d /root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/srv/LastTarget.js
 c50b51b0945a58b7ebd1bcf08c7253d8 /root/ros_ws/devel/share/roseus/ros/assignment_2_2023/manifest.l
+2037dd68c3f4c06953d67fbfb5ac5544 /root/ros_ws/devel/share/roseus/ros/assignment_2_2023/msg/GoalStatus.l
 0749bef41d69bf8c161de5c67c1b9ab3 /root/ros_ws/devel/share/roseus/ros/assignment_2_2023/msg/PlanningAction.l
 9a4c9faceb92a28731b902fb416d50a0 /root/ros_ws/devel/share/roseus/ros/assignment_2_2023/msg/PlanningActionFeedback.l
 b9c26d7deafa21a24f2e10feb1a5a3fd /root/ros_ws/devel/share/roseus/ros/assignment_2_2023/msg/PlanningActionGoal.l
@@ -41,13 +55,17 @@ bcb6eeaf0513f986a4dd6966a6b19c95 /root/ros_ws/devel/share/roseus/ros/assignment_
 24cce1e8bee449c99fb51c5a94cdfc9a /root/ros_ws/devel/share/roseus/ros/assignment_2_2023/msg/PlanningGoal.l
 8f3ec45901050e2e1b02025d2b7058ed /root/ros_ws/devel/share/roseus/ros/assignment_2_2023/msg/PlanningResult.l
 e6c66c3b9ad556c2317b14bbf70f37ec /root/ros_ws/devel/share/roseus/ros/assignment_2_2023/msg/Position.l
+8fe5d3a5d9c44170b831c6ceffd3e11e /root/ros_ws/devel/share/roseus/ros/assignment_2_2023/srv/GetDist.l
+670690038df4394493a5261223bd344d /root/ros_ws/devel/share/roseus/ros/assignment_2_2023/srv/LastTarget.l
 f30f9f7dfe838f49a937a885eb9f3aba CMakeFiles/clean_test_results
-d538c108bbfee0d5406210888f1b00ba assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningAction
-0ab529cf50de59a77048534dbaa92172 assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningActionFeedback
-56ce889fefd98bdd6c63a1843313c051 assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningActionGoal
-167a1ce1973ec8cb0a4ccd6ce5bccbb3 assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningActionResult
-8b13a13c260a9a18067af0aeaa8bedf3 assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningFeedback
-0b637cf1253d0230450c7f753032c2e8 assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningGoal
+3481cd13cba88c9b2c2b236199ce9684 assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_GetDist
+808e3a2e8596f723ed45b752729adb01 assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_LastTarget
+e97399d8ac8bb01ff24da2ff740556c4 assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningAction
+507cecc36ea20803bd7590fccd80c284 assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningActionFeedback
+33feb975a19a9ad3bd99db8f5d07c21b assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningActionGoal
+d480c5cce495dec713b9f98c0a47043f assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningActionResult
+e351134dfececa3476d0908c3ebf1b91 assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningFeedback
+c8e5021c5c9ec19ca9442c792105afcd assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningGoal
 3c54f46692026f8dd71912889749046e assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_PlanningResult
 53abf5c870f53545fa5c61dbf32fabde assignment_2_2023/CMakeFiles/_assignment_2_2023_generate_messages_check_deps_Position
 2cf9d00359b58c248e9b180a4210d226 assignment_2_2023/CMakeFiles/assignment_2_2023_generate_messages_cpp

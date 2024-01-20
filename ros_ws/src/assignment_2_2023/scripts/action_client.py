@@ -3,10 +3,12 @@ import rospy
 from std_msgs.msg import String
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Twist, Point
-from assignment_2_2023.msg import Position
+from assignment_2_2023.msg import Position, GoalStatus
 import assignment_2_2023
 import actionlib
 import actionlib.msg
+
+
 
 def client():
     # initialize node
@@ -21,11 +23,11 @@ def client():
 
     # wait for the server to be available
     action_client.wait_for_server()
-
-
     goal = assignment_2_2023.msg.PlanningGoal()
 
+
     while not rospy.is_shutdown():
+        
         # get user input
         user_input = input("Enter new goal position x,y or 'c' for cancel:")
         print(user_input)
@@ -64,8 +66,7 @@ def client():
                 print("ERROR! Enter the new goal position x,y")	
             
             
-       
-    print("Maybe shut down")
+
 
 
 def callback_odom(data):
@@ -75,6 +76,7 @@ def callback_odom(data):
     # position
     position_ = data.pose.pose.position
 
+
     # velocity
     linear_velocity = data.twist.twist.linear
 
@@ -82,10 +84,14 @@ def callback_odom(data):
     msg.x = position_.x
     msg.y = position_.y
     msg.vel_x = linear_velocity.x
-    msg.vel_z = linear_velocity.z
+    msg.vel_y = linear_velocity.y
     # publish the position and velocity with position.msg
     pub.publish(msg)
 
+
+def callback_goal(data):
+    if(len(data.status_list)!=0):
+        print(data)
 
 
 

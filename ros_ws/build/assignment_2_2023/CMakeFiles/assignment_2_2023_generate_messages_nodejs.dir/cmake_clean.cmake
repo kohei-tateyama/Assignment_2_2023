@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "/root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/msg/PlanningGoal.js"
   "/root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/msg/PlanningResult.js"
   "/root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/msg/Position.js"
+  "/root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/srv/GetDist.js"
+  "/root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/srv/LastTarget.js"
   "CMakeFiles/assignment_2_2023_generate_messages_nodejs"
 )
 

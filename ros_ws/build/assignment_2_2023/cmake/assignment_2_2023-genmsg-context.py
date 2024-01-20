@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/root/ros_ws/src/assignment_2_2023/msg/Position.msg;/root/ros_ws/devel/share/assignment_2_2023/msg/PlanningAction.msg;/root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionGoal.msg;/root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionResult.msg;/root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionFeedback.msg;/root/ros_ws/devel/share/assignment_2_2023/msg/PlanningGoal.msg;/root/ros_ws/devel/share/assignment_2_2023/msg/PlanningResult.msg;/root/ros_ws/devel/share/assignment_2_2023/msg/PlanningFeedback.msg"
-services_str = ""
+services_str = "/root/ros_ws/src/assignment_2_2023/srv/LastTarget.srv;/root/ros_ws/src/assignment_2_2023/srv/GetDist.srv"
 pkg_name = "assignment_2_2023"
 dependencies_str = "actionlib_msgs;geometry_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

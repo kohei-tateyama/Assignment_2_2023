@@ -14,7 +14,7 @@
 
 (defclass assignment_2_2023::Position
   :super ros::object
-  :slots (_x _y _vel_x _vel_z ))
+  :slots (_x _y _vel_x _vel_y ))
 
 (defmethod assignment_2_2023::Position
   (:init
@@ -22,13 +22,13 @@
     ((:x __x) 0.0)
     ((:y __y) 0.0)
     ((:vel_x __vel_x) 0.0)
-    ((:vel_z __vel_z) 0.0)
+    ((:vel_y __vel_y) 0.0)
     )
    (send-super :init)
    (setq _x (float __x))
    (setq _y (float __y))
    (setq _vel_x (float __vel_x))
-   (setq _vel_z (float __vel_z))
+   (setq _vel_y (float __vel_y))
    self)
   (:x
    (&optional __x)
@@ -39,9 +39,9 @@
   (:vel_x
    (&optional __vel_x)
    (if __vel_x (setq _vel_x __vel_x)) _vel_x)
-  (:vel_z
-   (&optional __vel_z)
-   (if __vel_z (setq _vel_z __vel_z)) _vel_z)
+  (:vel_y
+   (&optional __vel_y)
+   (if __vel_y (setq _vel_y __vel_y)) _vel_y)
   (:serialization-length
    ()
    (+
@@ -51,7 +51,7 @@
     8
     ;; float64 _vel_x
     8
-    ;; float64 _vel_z
+    ;; float64 _vel_y
     8
     ))
   (:serialize
@@ -64,8 +64,8 @@
        (sys::poke _y (send s :buffer) (send s :count) :double) (incf (stream-count s) 8)
      ;; float64 _vel_x
        (sys::poke _vel_x (send s :buffer) (send s :count) :double) (incf (stream-count s) 8)
-     ;; float64 _vel_z
-       (sys::poke _vel_z (send s :buffer) (send s :count) :double) (incf (stream-count s) 8)
+     ;; float64 _vel_y
+       (sys::poke _vel_y (send s :buffer) (send s :count) :double) (incf (stream-count s) 8)
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
@@ -76,24 +76,24 @@
      (setq _y (sys::peek buf ptr- :double)) (incf ptr- 8)
    ;; float64 _vel_x
      (setq _vel_x (sys::peek buf ptr- :double)) (incf ptr- 8)
-   ;; float64 _vel_z
-     (setq _vel_z (sys::peek buf ptr- :double)) (incf ptr- 8)
+   ;; float64 _vel_y
+     (setq _vel_y (sys::peek buf ptr- :double)) (incf ptr- 8)
    ;;
    self)
   )
 
-(setf (get assignment_2_2023::Position :md5sum-) "9a6b8857bb44e9dfbb8aa9b340027ecc")
+(setf (get assignment_2_2023::Position :md5sum-) "c041bf0d055543994235684d51d3d835")
 (setf (get assignment_2_2023::Position :datatype-) "assignment_2_2023/Position")
 (setf (get assignment_2_2023::Position :definition-)
       "float64 x
 float64 y
 float64 vel_x
-float64 vel_z
+float64 vel_y
 
 ")
 
 
 
-(provide :assignment_2_2023/Position "9a6b8857bb44e9dfbb8aa9b340027ecc")
+(provide :assignment_2_2023/Position "c041bf0d055543994235684d51d3d835")
 
 

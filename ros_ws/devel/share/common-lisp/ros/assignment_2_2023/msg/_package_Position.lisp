@@ -5,6 +5,6 @@
           Y
           VEL_X-VAL
           VEL_X
-          VEL_Z-VAL
-          VEL_Z
+          VEL_Y-VAL
+          VEL_Y
 ))

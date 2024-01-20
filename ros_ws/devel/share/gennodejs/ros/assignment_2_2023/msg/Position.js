@@ -21,7 +21,7 @@ class Position {
       this.x = null;
       this.y = null;
       this.vel_x = null;
-      this.vel_z = null;
+      this.vel_y = null;
     }
     else {
       if (initObj.hasOwnProperty('x')) {
@@ -42,11 +42,11 @@ class Position {
       else {
         this.vel_x = 0.0;
       }
-      if (initObj.hasOwnProperty('vel_z')) {
-        this.vel_z = initObj.vel_z
+      if (initObj.hasOwnProperty('vel_y')) {
+        this.vel_y = initObj.vel_y
       }
       else {
-        this.vel_z = 0.0;
+        this.vel_y = 0.0;
       }
     }
   }
@@ -59,8 +59,8 @@ class Position {
     bufferOffset = _serializer.float64(obj.y, buffer, bufferOffset);
     // Serialize message field [vel_x]
     bufferOffset = _serializer.float64(obj.vel_x, buffer, bufferOffset);
-    // Serialize message field [vel_z]
-    bufferOffset = _serializer.float64(obj.vel_z, buffer, bufferOffset);
+    // Serialize message field [vel_y]
+    bufferOffset = _serializer.float64(obj.vel_y, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -74,8 +74,8 @@ class Position {
     data.y = _deserializer.float64(buffer, bufferOffset);
     // Deserialize message field [vel_x]
     data.vel_x = _deserializer.float64(buffer, bufferOffset);
-    // Deserialize message field [vel_z]
-    data.vel_z = _deserializer.float64(buffer, bufferOffset);
+    // Deserialize message field [vel_y]
+    data.vel_y = _deserializer.float64(buffer, bufferOffset);
     return data;
   }
 
@@ -90,7 +90,7 @@ class Position {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '9a6b8857bb44e9dfbb8aa9b340027ecc';
+    return 'c041bf0d055543994235684d51d3d835';
   }
 
   static messageDefinition() {
@@ -99,7 +99,7 @@ class Position {
     float64 x
     float64 y
     float64 vel_x
-    float64 vel_z
+    float64 vel_y
     
     `;
   }
@@ -131,11 +131,11 @@ class Position {
       resolved.vel_x = 0.0
     }
 
-    if (msg.vel_z !== undefined) {
-      resolved.vel_z = msg.vel_z;
+    if (msg.vel_y !== undefined) {
+      resolved.vel_y = msg.vel_y;
     }
     else {
-      resolved.vel_z = 0.0
+      resolved.vel_y = 0.0
     }
 
     return resolved;

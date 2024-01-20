@@ -42,6 +42,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/assignment_2_2023/srv" TYPE FILE FILES
+    "/root/ros_ws/src/assignment_2_2023/srv/LastTarget.srv"
+    "/root/ros_ws/src/assignment_2_2023/srv/GetDist.srv"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/assignment_2_2023/action" TYPE FILE FILES "/root/ros_ws/src/assignment_2_2023/action/Planning.action")
 endif()
 
@@ -114,5 +121,9 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/assignment_2_2023" TYPE PROGRAM FILES "/root/ros_ws/build/assignment_2_2023/catkin_generated/installspace/last_target.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/assignment_2_2023" TYPE PROGRAM FILES "/root/ros_ws/build/assignment_2_2023/catkin_generated/installspace/test.py")
 endif()
 

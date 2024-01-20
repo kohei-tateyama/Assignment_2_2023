@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningGoal.lisp"
   "/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningResult.lisp"
   "/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/Position.lisp"
+  "/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/srv/GetDist.lisp"
+  "/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/srv/LastTarget.lisp"
   "CMakeFiles/assignment_2_2023_generate_messages_lisp"
 )
 

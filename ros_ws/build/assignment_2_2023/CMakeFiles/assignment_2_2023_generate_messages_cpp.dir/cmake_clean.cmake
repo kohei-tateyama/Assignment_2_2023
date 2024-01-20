@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "/root/ros_ws/devel/include/assignment_2_2023/GetDist.h"
+  "/root/ros_ws/devel/include/assignment_2_2023/LastTarget.h"
   "/root/ros_ws/devel/include/assignment_2_2023/PlanningAction.h"
   "/root/ros_ws/devel/include/assignment_2_2023/PlanningActionFeedback.h"
   "/root/ros_ws/devel/include/assignment_2_2023/PlanningActionGoal.h"

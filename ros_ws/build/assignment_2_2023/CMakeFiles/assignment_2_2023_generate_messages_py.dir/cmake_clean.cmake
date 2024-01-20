@@ -8,6 +8,9 @@ file(REMOVE_RECURSE
   "/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningResult.py"
   "/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_Position.py"
   "/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/__init__.py"
+  "/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/_GetDist.py"
+  "/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/_LastTarget.py"
+  "/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/__init__.py"
   "CMakeFiles/assignment_2_2023_generate_messages_py"
 )
 

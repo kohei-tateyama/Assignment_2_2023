@@ -27,13 +27,13 @@ struct Position_
     : x(0.0)
     , y(0.0)
     , vel_x(0.0)
-    , vel_z(0.0)  {
+    , vel_y(0.0)  {
     }
   Position_(const ContainerAllocator& _alloc)
     : x(0.0)
     , y(0.0)
     , vel_x(0.0)
-    , vel_z(0.0)  {
+    , vel_y(0.0)  {
   (void)_alloc;
     }
 
@@ -48,8 +48,8 @@ struct Position_
    typedef double _vel_x_type;
   _vel_x_type vel_x;
 
-   typedef double _vel_z_type;
-  _vel_z_type vel_z;
+   typedef double _vel_y_type;
+  _vel_y_type vel_y;
 
 
 
@@ -83,7 +83,7 @@ bool operator==(const ::assignment_2_2023::Position_<ContainerAllocator1> & lhs,
   return lhs.x == rhs.x &&
     lhs.y == rhs.y &&
     lhs.vel_x == rhs.vel_x &&
-    lhs.vel_z == rhs.vel_z;
+    lhs.vel_y == rhs.vel_y;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -140,12 +140,12 @@ struct MD5Sum< ::assignment_2_2023::Position_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "9a6b8857bb44e9dfbb8aa9b340027ecc";
+    return "c041bf0d055543994235684d51d3d835";
   }
 
   static const char* value(const ::assignment_2_2023::Position_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x9a6b8857bb44e9dfULL;
-  static const uint64_t static_value2 = 0xbb8aa9b340027eccULL;
+  static const uint64_t static_value1 = 0xc041bf0d05554399ULL;
+  static const uint64_t static_value2 = 0x4235684d51d3d835ULL;
 };
 
 template<class ContainerAllocator>
@@ -167,7 +167,7 @@ struct Definition< ::assignment_2_2023::Position_<ContainerAllocator> >
     return "float64 x\n"
 "float64 y\n"
 "float64 vel_x\n"
-"float64 vel_z\n"
+"float64 vel_y\n"
 ;
   }
 
@@ -189,7 +189,7 @@ namespace serialization
       stream.next(m.x);
       stream.next(m.y);
       stream.next(m.vel_x);
-      stream.next(m.vel_z);
+      stream.next(m.vel_y);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -214,8 +214,8 @@ struct Printer< ::assignment_2_2023::Position_<ContainerAllocator> >
     Printer<double>::stream(s, indent + "  ", v.y);
     s << indent << "vel_x: ";
     Printer<double>::stream(s, indent + "  ", v.vel_x);
-    s << indent << "vel_z: ";
-    Printer<double>::stream(s, indent + "  ", v.vel_z);
+    s << indent << "vel_y: ";
+    Printer<double>::stream(s, indent + "  ", v.vel_y);
   }
 };
 

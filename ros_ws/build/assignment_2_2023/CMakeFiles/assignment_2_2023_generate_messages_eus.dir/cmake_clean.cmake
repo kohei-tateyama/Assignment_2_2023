@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "/root/ros_ws/devel/share/roseus/ros/assignment_2_2023/msg/PlanningGoal.l"
   "/root/ros_ws/devel/share/roseus/ros/assignment_2_2023/msg/PlanningResult.l"
   "/root/ros_ws/devel/share/roseus/ros/assignment_2_2023/msg/Position.l"
+  "/root/ros_ws/devel/share/roseus/ros/assignment_2_2023/srv/GetDist.l"
+  "/root/ros_ws/devel/share/roseus/ros/assignment_2_2023/srv/LastTarget.l"
   "CMakeFiles/assignment_2_2023_generate_messages_eus"
 )
 
