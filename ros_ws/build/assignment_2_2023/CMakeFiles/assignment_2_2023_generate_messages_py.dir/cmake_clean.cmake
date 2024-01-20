@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_Goal.py"
   "/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py"
   "/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionFeedback.py"
   "/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py"

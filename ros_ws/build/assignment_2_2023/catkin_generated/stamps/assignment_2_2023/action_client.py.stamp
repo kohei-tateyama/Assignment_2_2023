@@ -26,11 +26,11 @@ class Client():
         # action_client.wait_for_server()
         self.goal = assignment_2_2023.msg.PlanningGoal()
 
+        # subsctribe to status to check if the target is reached
         rospy.Subscriber('/reaching_goal/status',String, self.callback_goal)
         
 
         while not rospy.is_shutdown():
-            
             # get user input
             user_input = input("Enter new goal position x,y or 'c' for cancel:")
             print(user_input)
@@ -55,6 +55,7 @@ class Client():
                     self.goal.target_pose.pose.position.x = x
                     self.goal.target_pose.pose.position.y = y  
                 
+                    # set message to publish
                     goal_msg = Point()
                     goal_msg.x = self.goal.target_pose.pose.position.x
                     goal_msg.y = self.goal.target_pose.pose.position.y
@@ -64,7 +65,7 @@ class Client():
                     goal_pub.publish(goal_msg)                                    
                                 
                     action_client.send_goal(self.goal)
-                    # Print a error message if the input is not a float value
+                    # Print an error message if the input is not a float value
                 except ValueError: # else if user_input is not 2 floats
                     print("ERROR! Enter the new goal position x,y")	
                 
@@ -78,13 +79,13 @@ class Client():
         # Set the publisher for robot position
         pub = rospy.Publisher('/position', Position,  queue_size = 10)
         rate=rospy.Rate(1)
+
         # position
         position_ = data.pose.pose.position
-
-
         # velocity
         linear_velocity = data.twist.twist.linear
 
+        # set the message to publish
         msg = Position()
         msg.x = position_.x
         msg.y = position_.y
@@ -95,10 +96,14 @@ class Client():
 
 
     def callback_goal(self, data):
+        # get the status of the goal
         if(len(data.status_list)!=0):
             temp=data.status_list[0]
-            temp2 = temp.split("\"")
-            print(temp2[0])
+            temp2=str(temp)
+            temp3 = temp2.split("\"")
+            temp4 = temp3[2].split()
+            if(temp4[1]=='3'):
+                print("Reached Target")
             
 
 

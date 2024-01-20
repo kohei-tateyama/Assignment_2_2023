@@ -1,8 +1,8 @@
 (cl:defpackage assignment_2_2023-msg
   (:use )
   (:export
-   "<GOALSTATUS>"
-   "GOALSTATUS"
+   "<GOAL>"
+   "GOAL"
    "<PLANNINGACTION>"
    "PLANNINGACTION"
    "<PLANNINGACTIONFEEDBACK>"

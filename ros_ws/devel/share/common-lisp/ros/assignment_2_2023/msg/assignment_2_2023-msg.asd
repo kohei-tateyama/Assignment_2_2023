@@ -7,8 +7,8 @@
                :std_msgs-msg
 )
   :components ((:file "_package")
-    (:file "GoalStatus" :depends-on ("_package_GoalStatus"))
-    (:file "_package_GoalStatus" :depends-on ("_package"))
+    (:file "Goal" :depends-on ("_package_Goal"))
+    (:file "_package_Goal" :depends-on ("_package"))
     (:file "PlanningAction" :depends-on ("_package_PlanningAction"))
     (:file "_package_PlanningAction" :depends-on ("_package"))
     (:file "PlanningActionFeedback" :depends-on ("_package_PlanningActionFeedback"))

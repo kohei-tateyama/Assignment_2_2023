@@ -1,3 +1,4 @@
+from ._Goal import *
 from ._GoalStatus import *
 from ._PlanningAction import *
 from ._PlanningActionFeedback import *

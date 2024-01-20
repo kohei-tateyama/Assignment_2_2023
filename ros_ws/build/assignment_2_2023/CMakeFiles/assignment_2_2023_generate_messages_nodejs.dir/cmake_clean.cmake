@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "/root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/msg/Goal.js"
   "/root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/msg/PlanningAction.js"
   "/root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/msg/PlanningActionFeedback.js"
   "/root/ros_ws/devel/share/gennodejs/ros/assignment_2_2023/msg/PlanningActionGoal.js"

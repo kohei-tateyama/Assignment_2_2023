@@ -59,6 +59,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   Position.msg
+  Goal.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -122,7 +123,6 @@ PROGRAMS
 scripts/action_client.py 
 scripts/get_dist.py 
 scripts/last_target.py 
-scripts/test.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

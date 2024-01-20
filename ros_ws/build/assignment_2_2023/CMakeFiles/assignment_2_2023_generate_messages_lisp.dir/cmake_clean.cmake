@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/Goal.lisp"
   "/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningAction.lisp"
   "/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionFeedback.lisp"
   "/root/ros_ws/devel/share/common-lisp/ros/assignment_2_2023/msg/PlanningActionGoal.lisp"

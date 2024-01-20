@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "/root/ros_ws/devel/share/roseus/ros/assignment_2_2023/manifest.l"
+  "/root/ros_ws/devel/share/roseus/ros/assignment_2_2023/msg/Goal.l"
   "/root/ros_ws/devel/share/roseus/ros/assignment_2_2023/msg/PlanningAction.l"
   "/root/ros_ws/devel/share/roseus/ros/assignment_2_2023/msg/PlanningActionFeedback.l"
   "/root/ros_ws/devel/share/roseus/ros/assignment_2_2023/msg/PlanningActionGoal.l"

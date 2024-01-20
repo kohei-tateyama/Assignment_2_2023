@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /root/ros_ws/build
 include assignment_2_2023/CMakeFiles/assignment_2_2023_generate_messages_py.dir/progress.make
 
 assignment_2_2023/CMakeFiles/assignment_2_2023_generate_messages_py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_Position.py
+assignment_2_2023/CMakeFiles/assignment_2_2023_generate_messages_py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_Goal.py
 assignment_2_2023/CMakeFiles/assignment_2_2023_generate_messages_py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py
 assignment_2_2023/CMakeFiles/assignment_2_2023_generate_messages_py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py
 assignment_2_2023/CMakeFiles/assignment_2_2023_generate_messages_py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionResult.py
@@ -72,34 +73,39 @@ assignment_2_2023/CMakeFiles/assignment_2_2023_generate_messages_py: /root/ros_w
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG assignment_2_2023/Position"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/ros_ws/src/assignment_2_2023/msg/Position.msg -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg
 
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_Goal.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_Goal.py: /root/ros_ws/src/assignment_2_2023/msg/Goal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG assignment_2_2023/Goal"
+	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/ros_ws/src/assignment_2_2023/msg/Goal.msg -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg
+
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningAction.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningResult.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionFeedback.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionGoal.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningGoal.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionFeedback.msg
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningFeedback.msg
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionGoal.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningResult.msg
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningGoal.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionResult.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningFeedback.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG assignment_2_2023/PlanningAction"
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG assignment_2_2023/PlanningAction"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningAction.msg -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg
 
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionGoal.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningGoal.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG assignment_2_2023/PlanningActionGoal"
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningGoal.msg
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG assignment_2_2023/PlanningActionGoal"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionGoal.msg -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg
 
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionResult.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
@@ -108,56 +114,57 @@ assignment_2_2023/CMakeFiles/assignment_2_2023_generate_messages_py: /root/ros_w
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionResult.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionResult.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionResult.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG assignment_2_2023/PlanningActionResult"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG assignment_2_2023/PlanningActionResult"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionResult.msg -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg
 
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionFeedback.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionFeedback.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionFeedback.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionFeedback.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningFeedback.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionFeedback.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningFeedback.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG assignment_2_2023/PlanningActionFeedback"
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG assignment_2_2023/PlanningActionFeedback"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningActionFeedback.msg -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg
 
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningGoal.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningGoal.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningGoal.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningGoal.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG assignment_2_2023/PlanningGoal"
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningGoal.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG assignment_2_2023/PlanningGoal"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningGoal.msg -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg
 
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningResult.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningResult.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningResult.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG assignment_2_2023/PlanningResult"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python from MSG assignment_2_2023/PlanningResult"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningResult.msg -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg
 
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningFeedback.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningFeedback.py: /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningFeedback.msg
-/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python from MSG assignment_2_2023/PlanningFeedback"
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningFeedback.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Python from MSG assignment_2_2023/PlanningFeedback"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/ros_ws/devel/share/assignment_2_2023/msg/PlanningFeedback.msg -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg
 
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/_LastTarget.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/_LastTarget.py: /root/ros_ws/src/assignment_2_2023/srv/LastTarget.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Python code from SRV assignment_2_2023/LastTarget"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Python code from SRV assignment_2_2023/LastTarget"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /root/ros_ws/src/assignment_2_2023/srv/LastTarget.srv -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv
 
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/_GetDist.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/_GetDist.py: /root/ros_ws/src/assignment_2_2023/srv/GetDist.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Python code from SRV assignment_2_2023/GetDist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Python code from SRV assignment_2_2023/GetDist"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /root/ros_ws/src/assignment_2_2023/srv/GetDist.srv -Iassignment_2_2023:/root/ros_ws/src/assignment_2_2023/msg -Iassignment_2_2023:/root/ros_ws/devel/share/assignment_2_2023/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p assignment_2_2023 -o /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv
 
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/__init__.py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_Position.py
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/__init__.py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_Goal.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/__init__.py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/__init__.py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/__init__.py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionResult.py
@@ -167,11 +174,12 @@ assignment_2_2023/CMakeFiles/assignment_2_2023_generate_messages_py: /root/ros_w
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/__init__.py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningFeedback.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/__init__.py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/_LastTarget.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/__init__.py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/_GetDist.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Python msg __init__.py for assignment_2_2023"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Python msg __init__.py for assignment_2_2023"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg --initpy
 
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/__init__.py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_Position.py
+/root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/__init__.py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_Goal.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/__init__.py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/__init__.py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/__init__.py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionResult.py
@@ -181,11 +189,12 @@ assignment_2_2023/CMakeFiles/assignment_2_2023_generate_messages_py: /root/ros_w
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/__init__.py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningFeedback.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/__init__.py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/_LastTarget.py
 /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/__init__.py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv/_GetDist.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Python srv __init__.py for assignment_2_2023"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Python srv __init__.py for assignment_2_2023"
 	cd /root/ros_ws/build/assignment_2_2023 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/srv --initpy
 
 assignment_2_2023_generate_messages_py: assignment_2_2023/CMakeFiles/assignment_2_2023_generate_messages_py
 assignment_2_2023_generate_messages_py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_Position.py
+assignment_2_2023_generate_messages_py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_Goal.py
 assignment_2_2023_generate_messages_py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningAction.py
 assignment_2_2023_generate_messages_py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionGoal.py
 assignment_2_2023_generate_messages_py: /root/ros_ws/devel/lib/python3/dist-packages/assignment_2_2023/msg/_PlanningActionResult.py
