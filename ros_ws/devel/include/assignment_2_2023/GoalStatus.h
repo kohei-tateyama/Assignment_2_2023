@@ -24,21 +24,51 @@ struct GoalStatus_
   typedef GoalStatus_<ContainerAllocator> Type;
 
   GoalStatus_()
-    : status(0)
-    , text()  {
+    : header(0.0)
+    , goal_id(0.0)
+    , stamp(0.0)
+    , secs(0.0)
+    , nsecs(0.0)
+    , id(0.0)
+    , status(0.0)
+    , text(0.0)  {
     }
   GoalStatus_(const ContainerAllocator& _alloc)
-    : status(0)
-    , text(_alloc)  {
+    : header(0.0)
+    , goal_id(0.0)
+    , stamp(0.0)
+    , secs(0.0)
+    , nsecs(0.0)
+    , id(0.0)
+    , status(0.0)
+    , text(0.0)  {
   (void)_alloc;
     }
 
 
 
-   typedef int32_t _status_type;
+   typedef double _header_type;
+  _header_type header;
+
+   typedef double _goal_id_type;
+  _goal_id_type goal_id;
+
+   typedef double _stamp_type;
+  _stamp_type stamp;
+
+   typedef double _secs_type;
+  _secs_type secs;
+
+   typedef double _nsecs_type;
+  _nsecs_type nsecs;
+
+   typedef double _id_type;
+  _id_type id;
+
+   typedef double _status_type;
   _status_type status;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _text_type;
+   typedef double _text_type;
   _text_type text;
 
 
@@ -70,7 +100,13 @@ return s;
 template<typename ContainerAllocator1, typename ContainerAllocator2>
 bool operator==(const ::assignment_2_2023::GoalStatus_<ContainerAllocator1> & lhs, const ::assignment_2_2023::GoalStatus_<ContainerAllocator2> & rhs)
 {
-  return lhs.status == rhs.status &&
+  return lhs.header == rhs.header &&
+    lhs.goal_id == rhs.goal_id &&
+    lhs.stamp == rhs.stamp &&
+    lhs.secs == rhs.secs &&
+    lhs.nsecs == rhs.nsecs &&
+    lhs.id == rhs.id &&
+    lhs.status == rhs.status &&
     lhs.text == rhs.text;
 }
 
@@ -104,12 +140,12 @@ struct IsMessage< ::assignment_2_2023::GoalStatus_<ContainerAllocator> const>
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::assignment_2_2023::GoalStatus_<ContainerAllocator> >
-  : FalseType
+  : TrueType
   { };
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::assignment_2_2023::GoalStatus_<ContainerAllocator> const>
-  : FalseType
+  : TrueType
   { };
 
 template <class ContainerAllocator>
@@ -128,12 +164,12 @@ struct MD5Sum< ::assignment_2_2023::GoalStatus_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "3a7ffb7542e8f2c34c310f44cb69496e";
+    return "067cd7cb55e722a1bc57106df18d22c9";
   }
 
   static const char* value(const ::assignment_2_2023::GoalStatus_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x3a7ffb7542e8f2c3ULL;
-  static const uint64_t static_value2 = 0x4c310f44cb69496eULL;
+  static const uint64_t static_value1 = 0x067cd7cb55e722a1ULL;
+  static const uint64_t static_value2 = 0xbc57106df18d22c9ULL;
 };
 
 template<class ContainerAllocator>
@@ -152,9 +188,14 @@ struct Definition< ::assignment_2_2023::GoalStatus_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "# GoalStatus.msg\n"
-"int32 status\n"
-"string text\n"
+    return "float64 header\n"
+"float64 goal_id\n"
+"float64 stamp\n"
+"float64 secs\n"
+"float64 nsecs\n"
+"float64 id\n"
+"float64 status\n"
+"float64 text\n"
 ;
   }
 
@@ -173,6 +214,12 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
+      stream.next(m.header);
+      stream.next(m.goal_id);
+      stream.next(m.stamp);
+      stream.next(m.secs);
+      stream.next(m.nsecs);
+      stream.next(m.id);
       stream.next(m.status);
       stream.next(m.text);
     }
@@ -193,10 +240,22 @@ struct Printer< ::assignment_2_2023::GoalStatus_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::assignment_2_2023::GoalStatus_<ContainerAllocator>& v)
   {
+    s << indent << "header: ";
+    Printer<double>::stream(s, indent + "  ", v.header);
+    s << indent << "goal_id: ";
+    Printer<double>::stream(s, indent + "  ", v.goal_id);
+    s << indent << "stamp: ";
+    Printer<double>::stream(s, indent + "  ", v.stamp);
+    s << indent << "secs: ";
+    Printer<double>::stream(s, indent + "  ", v.secs);
+    s << indent << "nsecs: ";
+    Printer<double>::stream(s, indent + "  ", v.nsecs);
+    s << indent << "id: ";
+    Printer<double>::stream(s, indent + "  ", v.id);
     s << indent << "status: ";
-    Printer<int32_t>::stream(s, indent + "  ", v.status);
+    Printer<double>::stream(s, indent + "  ", v.status);
     s << indent << "text: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.text);
+    Printer<double>::stream(s, indent + "  ", v.text);
   }
 };
 

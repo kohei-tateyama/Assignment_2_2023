@@ -43,6 +43,9 @@ class GetDistance():
     def callback_service(self, req):
 
         response = GetDistResponse()
+        print(self.robot.x)
+        print(self.goal_x)
+        
         if self.goal_x is not None and self.goal_y is not None:
             response.dist = math.sqrt((self.goal_x - self.robot.x)**2 + (self.goal_y - self.robot.y)**2)
         if len(self.speedx)!=0:
