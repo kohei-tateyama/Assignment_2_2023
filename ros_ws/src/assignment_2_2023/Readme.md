@@ -17,32 +17,35 @@ git clone https://github.com/kohei-tateyama/Assignment_2_2023.git
 ```
 
 ## 2. Run
+Start the ROS master:
 ```
 roscore
 ```
 
-In a separate terminal,
-
+In a separate terminal, go to the ros workspace:
 ```
 cd ros_ws
 ```
 
+Build the workspace using catkin:
 ```
 catkin_make
 ```
 
-```
-cd src/assignment_2_2023/scripts
-```
+go to the scripts directory and make all the files executable:
 
 ```
+cd src/assignment_2_2023/scripts
 chmod +x *
 ```
 
+source the ROS setup:
+
 ```
 source ../../../devel/setup.bash
-```
 
+```
+Launch the assignment:
 ```
 roslaunch rt_assignment_2 assignment_1.launch
 ```
