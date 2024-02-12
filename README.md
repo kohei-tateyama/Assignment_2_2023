@@ -46,7 +46,7 @@ source ../../../devel/setup.bash
 
 Launch the assignment:
 ```bash
-roslaunch rt_assignment_2 assignment_1.launch
+roslaunch Assignment_2_2023 assignment_1.launch
 ```
 
 
